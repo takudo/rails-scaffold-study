@@ -1,2 +1,2 @@
-class Entry < ActiveRecord::Base
+class Entry < ActiveRecord::Base #ActiveRecordモジュール Baseクラスの継承
 end

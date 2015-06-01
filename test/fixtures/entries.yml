@@ -1,5 +1,8 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
+# http://qiita.com/itkrt2y/items/ca34fea17fc7dde56b7a
+# テストデータ投入
+
 one:
   title: MyString
   body: MyText

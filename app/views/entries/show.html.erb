@@ -2,13 +2,13 @@
 
 <p>
   <strong>Title:</strong>
-  <%= @entry.title %>
+  <%= @entry.title %> <%# titleの出力 %>
 </p>
 
 <p>
   <strong>Body:</strong>
-  <%= @entry.body %>
+  <%= @entry.body %> <%# bodyの出力 %>
 </p>
 
-<%= link_to 'Edit', edit_entry_path(@entry) %> |
-<%= link_to 'Back', entries_path %>
+<%= link_to 'Edit', edit_entry_path(@entry) %> | <%# link_to メソッドで編集画面へのリンク出力 %>
+<%= link_to 'Back', entries_path %> <%# link_to メソッドで一覧画面へのリンク出力 %>

@@ -12,13 +12,16 @@
   </thead>
 
   <tbody>
-    <% @entries.each do |entry| %>
+    <% @entries.each do |entry| %> <%# index アクションで取得したentries をeach メソッドでループ %>
       <tr>
-        <td><%= entry.title %></td>
-        <td><%= entry.body %></td>
-        <td><%= link_to 'Show', entry %></td>
-        <td><%= link_to 'Edit', edit_entry_path(entry) %></td>
+        <td><%= entry.title %></td> <%# title の出力 %>
+        <td><%= entry.body %></td> <%# bodyの出力 %>
+        <td><%= link_to 'Show', entry %></td> <%# link_to メソッドの呼び出し　第一引数が要素のラベル 第二引数がActiveRecordオブジェクト %>
+        <td><%= link_to 'Edit', edit_entry_path(entry) %></td> <%# link_to メソッドの呼び出し　第一引数が要素のラベル 第二引数が
+        edit_entry_pathで編集URI取得 %>
         <td><%= link_to 'Destroy', entry, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <%# link_to メソッドの呼び出し　第一引数が要素のラベル 第二引数が
+        ActiveRecord オブジェクト、method引数に:delete シンボル、data引数に Hash（確認ダイアログの内容） %>
       </tr>
     <% end %>
   </tbody>
@@ -26,4 +29,4 @@
 
 <br>
 
-<%= link_to 'New Entry', new_entry_path %>
+<%= link_to 'New Entry', new_entry_path %> <%# link_to メソッドの呼び出し　第一引数が要素のラベル 第二引数が新規登録のURI取得メソッドの戻り値 %>
