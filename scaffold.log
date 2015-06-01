@@ -1,0 +1,45 @@
+% bundle exec rails g scaffold Entry title:string body:text           [9:43:19]
+
+      invoke  active_record
+      create    db/migrate/20150601004502_create_entries.rb
+      create    app/models/entry.rb
+
+      invoke    test_unit
+      create      test/models/entry_test.rb
+      create      test/fixtures/entries.yml
+
+      invoke  resource_route
+       route    resources :entries
+
+      invoke  scaffold_controller
+      create    app/controllers/entries_controller.rb
+
+      invoke    erb
+      create      app/views/entries
+      create      app/views/entries/index.html.erb
+      create      app/views/entries/edit.html.erb
+      create      app/views/entries/show.html.erb
+      create      app/views/entries/new.html.erb
+      create      app/views/entries/_form.html.erb
+
+      invoke    test_unit
+      create      test/controllers/entries_controller_test.rb
+
+      invoke    helper
+      create      app/helpers/entries_helper.rb
+
+      invoke      test_unit
+
+      invoke    jbuilder
+      create      app/views/entries/index.json.jbuilder
+      create      app/views/entries/show.json.jbuilder
+
+      invoke  assets
+      invoke    coffee
+      create      app/assets/javascripts/entries.coffee
+
+      invoke    scss
+      create      app/assets/stylesheets/entries.scss
+
+      invoke  scss
+      create    app/assets/stylesheets/scaffolds.scss
